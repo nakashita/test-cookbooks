@@ -38,5 +38,3 @@ execute "wp deploy" do
    action :run
    not_if "sudo -u deploy wp core is-installed --path=#{wpdir}"
 end
-
-# hoge
