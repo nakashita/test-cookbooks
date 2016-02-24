@@ -16,7 +16,6 @@ execute "wp configure" do
    action :run
 end
 
-
 uri = URI.parse("http://169.254.169.254/latest/meta-data/public-hostname")
 http = Net::HTTP.new(uri.host, uri.port)
 request = Net::HTTP::Get.new(uri.request_uri)
